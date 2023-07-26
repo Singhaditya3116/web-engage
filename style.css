@@ -1,0 +1,236 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Setting default font-size */
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18.72px;
+}
+
+h4,
+p {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 13.28px;
+}
+
+h6 {
+  font-size: 10.72px;
+}
+
+body {
+  margin: 30px 50px;
+  background-color: whitesmoke;
+}
+
+.main-container {
+  width: 1000px;
+  margin: auto;
+  padding: 2rem 2rem 0rem 2rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialogue-container {
+  width: 1000px;
+  min-height: 400px;
+  margin: auto;
+  padding: 2rem 2rem 0rem 2rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.left-section {
+  width: 400px;
+}
+
+.left-section img {
+  width: 100%;
+}
+
+.right-section {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  width: 20rem;
+  height: 100%;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text h1 {
+  font-size: 4rem;
+}
+
+.text h5 {
+  font-size: 2rem;
+}
+
+.survey-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 1rem;
+  margin: 0.6rem;
+  width: 40rem;
+}
+
+form div {
+  position: relative;
+}
+
+.required-field {
+  display: none;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  color: red;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  width: 42.3rem;
+  margin: 0.6rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#right-icon {
+  padding-left: 0.5rem;
+  width: 2rem;
+}
+
+.error-dialogue-box {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  z-index: 10;
+  padding: 5rem;
+  background-color: white;
+  display: none;
+  border-radius: 5px;
+}
+
+#error-btn {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  background-color: red;
+  border: 0px;
+  cursor: pointer;
+}
+
+#overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1100px) {
+  .main-container {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-container {
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .survey-form {
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+  }
+
+  input {
+    width: 25rem;
+  }
+
+  button[type="submit"] {
+    width: 27rem;
+  }
+
+  .left-section {
+    width: 300px;
+  }
+
+  .input {
+    width: 25rem;
+  }
+  .main-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .main-container {
+    width: 100%;
+  }
+}

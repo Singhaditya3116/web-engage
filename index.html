@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- left section -->
+      <div class="left-section">
+        <img alt="Login Image" src="./folder/profile-img.png" />
+      </div>
+
+      <!-- right section -->
+      <div class="right-section">
+        <!-- logo -->
+        <div class="logo">
+          <img alt="logo" src="./folder/logo.png" />
+        </div>
+
+        <div class="text">
+          <h1>Get a FREE</h1>
+          <h5>consultation with an expert</h5>
+        </div>
+        <!-- form -->
+        <form class="survey-form" method="GET">
+          <div>
+            <input name="email" id="email" placeholder="Enter your email" />
+            <p class="required-field">Required Field</p>
+          </div>
+          <div>
+            <input
+              name="mobile-number"
+              id="mobile-number"
+              placeholder="Enter your mobile"
+            />
+            <p class="required-field">Required Filed</p>
+          </div>
+
+          <button type="submit" id="submit">
+            <span>Talk to us</span>
+            <img id="right-icon" src="./folder/right-icon.png" />
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="dialogue-container">
+      <h2>
+        Thanks a ton for taking out your precious time and for completing the
+        survey Email Address <span id="email-span"></span> Contact Number
+        <span id="mobile-span"></span>
+      </h2>
+    </div>
+
+    <div class="error-dialogue-box">
+      <h3 id="error-text">dfdfd</h3>
+      <button id="error-btn">Ok</button>
+    </div>
+    <div id="overlay"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
