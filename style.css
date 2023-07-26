@@ -178,7 +178,8 @@ button[type="submit"] {
 }
 
 @media screen and (max-width: 1100px) {
-  .main-container {
+  .main-container,
+  .dialogue-container {
     width: 800px;
   }
 }
@@ -190,17 +191,28 @@ button[type="submit"] {
     justify-content: center;
     align-items: center;
   }
+
+  .dialogue-container {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .main-container {
     width: 90%;
   }
+  .dialogue-container h2 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
+  }
+
+  .dialogue-container h2 {
+    font-size: 2rem;
   }
 
   .survey-form {
