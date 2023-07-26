@@ -42,7 +42,7 @@ function showDialogBox() {
   mainContainer.style.display = "none";
   dialogueContainer.style.display = "flex";
 
-  // setTimeout(() => location.reload(), 3000);
+  setTimeout(() => location.reload(), 3000);
 }
 
 function showErrorDialogueBox(text) {
